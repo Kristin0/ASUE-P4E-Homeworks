@@ -12,6 +12,4 @@ while int(guess) != num:
     elif int(guess) < num:
         guess = int(input("Enter higher: "))
         counter += 1
-#    elif guess == "exit":
-#        break
 print("Right!It's " + str(guess) + " with " + str(counter) + "d attemp")
