@@ -3,7 +3,7 @@ import random
 num = random.randint(1,10)
 guess = input("Enter your number: ")
 counter = 0
-while int(guess) != num:
+while guess != "exit" and int(guess) != num:
     if int(guess) > num:
         guess = input("Enter lower: ")
         counter += 1
