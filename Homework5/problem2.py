@@ -15,7 +15,7 @@ def is_possible_to_palindrom(d, s):
     d1 = amount_of_each_letter(s)
     d_keys = list(d1.keys())
     for k in d1.values():
-        for i,j in zip(range(int(len(s)/2) + 1),range(int(len(s)/2) + 1)):
+        for i,j in zip(range(int(len(s)//2) + 1),range(int(len(s)//2) + 1)):
             if k % 2 == 0:
                 k1 = k/2
                 while k1 != 0:
