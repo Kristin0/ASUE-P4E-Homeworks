@@ -21,8 +21,8 @@ def is_possible_to_palindrom(d, s):
                 k1 = k//2
                 while k1 != 0:
                     s[i] = s[int(len(s))-i-1] = d_keys[j]
-                    j -= k1
                     k1 -= 1
+                j -= k1
     return s
 
 #print(amount_of_each_letter(string))
